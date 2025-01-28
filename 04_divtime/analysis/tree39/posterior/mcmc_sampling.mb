@@ -1,0 +1,122 @@
+begin mrbayes;
+[Script documentation carried out using comments]
+
+[log the analysis]
+log start filename=mcmc_sampling.log;
+
+[read the matrix concatenated.nexus]
+execute alignment_and_trees.nexus;
+
+[close analysis at end]
+set autoclose=yes;
+
+[This command shows the status of all the taxa, according to the documentation]
+taxastat;
+
+[definition of individual partitions per marker come from partitions.txt]
+charset adorate = 1-102;
+charset audivit = 103-179;
+charset circumd = 180-354;
+charset confess = 355-458;
+charset deusinn = 459-586;
+charset dumclam = 587-784;
+charset dumsanc = 785-966;
+charset estomih = 967-1099;
+charset exaudid = 1100-1197;
+charset exsurge = 1198-1430;
+charset facmecu = 1431-1544;
+charset invocab = 1545-1659;
+charset judicam = 1660-1820;
+charset laetare = 1821-2019;
+charset lexdomi = 2020-2115;
+charset meditat = 2116-2189;
+charset miserer = 2190-2395;
+charset redimem = 2396-2500;
+charset tibidix = 2501-2584;
+charset verbame = 2585-2698;
+
+[definition of the single partition]
+partition chants=20:adorate,audivit,circumd,confess,deusinn,dumclam,dumsanc,estomih,exaudid,exsurge,facmecu,invocab,judicam,laetare,lexdomi,meditat,miserer,redimem,tibidix,verbame;
+
+[specification of substitution models]
+set partition=chants;
+lset applyto=(all) coding=all rates=invgamma; [Mkv+I+G, nstates is automatic for the standard datatype]
+
+[allow rate categories to vary among partitions]
+prset applyto=(all) ratepr=variable;
+
+[a diffuse compound gamma prior on branch lengths with mean tree length = 0.362]
+prset brlenspr = unconstrained: gammadir(1, 2.76, 1, 1);
+
+[-------CAREFUL! OUR DATES ARE HERE IN YEARS AFTER JESUS, BUT DIVTIME IS IN YEARS BEFORE THE PRESENT---------------]
+[-------also, for some resaon the posterior tip dates are with min=0 with an apparent offset of 310Ma from the reported min]
+
+[set tip calibrations by using the calibration table provided by Jan]
+calibrate
+  _CH_ROM_Ms_liturg_FiD_5=uniform(725,824)
+  _D_HEu_Cod_Sal_X_007=uniform(725,824)
+  _F_Pn_NAL_01414=uniform(825,924)
+  _PL_WRu_I_F_414=uniform(725,824)
+  _PL_WRu_I_F_416=uniform(625,724)
+  _D_KNd_Ms_1001b=fixed(725)
+  _D_LEu_Ms_Thomas_391=uniform(725,824)
+  _F_Pa_Ms_0197=uniform(727,754)
+  _F_G_Ms_0084_Ms_395_Res=uniform(825,924)
+  _F_Pn_Ms_Lat_00833=uniform(824,849)
+  _PL_Wn_rps_12722_V=uniform(625,724)
+  _F_Pn_Ms_Lat_17307=uniform(825,924)
+  _F_SEm_Ms_018=uniform(725,824)
+  _A_Gu_Ms_0807=uniform(825,924)
+  _F_PR_Ms_0012=uniform(725,824)
+  _F_Pn_NAL_01235=uniform(825,924)
+  _F_NS_Ms_0004=uniform(825,924)
+  _F_CA_Ms_0061_62=uniform(858,891)
+  _I_BGc_MA_150_Psi_III_8=uniform(825,924)
+  _I_BGc_MA_239_Gamma_III_18=uniform(924,933)
+  _NL_Uu_Hs_0415=uniform(525,624)
+  _V_CVbav_Ross_0076=uniform(725,824)
+  _D_B_Ms_mus_40078=uniform(825,924)
+;
+
+[setting up the fbd divtime analysis]
+prset
+  brlenspr=clock:fossilization [because we have fossil tips, otherwise it would be birthdeath]
+  topologypr=fixed(tree39) [fix the tree to the rooted one we want to test on, replace with the key tree39]
+  treeagepr=uniform(1124,1324) [this is 2024- (700,900)]
+  sampleprob=0
+  samplestrat=random [random is the default but I'm including it to comment that this allows for sampled ancestors to be recovered]
+  nodeagepr=calibrated
+  speciationpr = uniform(0,10)
+  extinctionpr = beta(1,1)
+  fossilizationpr = beta(1,1)
+;
+
+[define a clock for each partition but with the same priors]
+prset applyto=(all)
+  clockvarpr=igr
+  igrvarpr=exp(2) [exp(2) seems to be working just fine again]
+  clockrate=exp(5) [exp(5) seems to be working just fine again]
+;
+
+[-------CAREFUL! OUR DATES ARE HERE IN YEARS AFTER JESUS, BUT DIVTIME IS IN YEARS BEFORE THE PRESENT--------------]
+
+[show the model just specified for each partition]
+showmodel;
+
+[set up the MCMC]
+[sample from prior, data=no]
+mcmcp data=yes nruns=1 temp=0.001 ngen=10000000 nchains=8 samplefreq=1000 printfreq=10000;
+
+[run mcmc sampling]
+mcmc;
+
+[summarize the posterior trees]
+sumt nruns=1 relburnin=yes burninfrac=0.1;
+plot;
+
+
+[summarize parameter posteriors]
+sump;
+log stop;
+
+quit;

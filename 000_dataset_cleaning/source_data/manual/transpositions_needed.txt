@@ -1,0 +1,15 @@
+redimem,V-CVbav : Vat.lat.05319
+tibidix,V-CVbav : Vat.lat.05319
+meditat,V-CVbav : Archivio di San Pietro F.22
+facmecu,D-HEu : Cod. Sal. X,007
+facmecu,F-Pn : Ms Lat 17037
+facmecu,NL-Uu : Hs. 0415
+exsurge,D-HEu : Cod. Sal. X,007
+exaudid,V-CVbav : Vat.lat.05319
+estomih,CH-Cobodmer : C 0074
+estomih,D-HEu : Cod. Sal. X,007
+estomih,F-Pn : NAL 01414
+estomih,PL-WRu I F 414
+estomih,PL-WRu I F 416
+estomih,V-CVbav : Vat.lat.05319
+adorate,F-Pn : Ms Lat 17307

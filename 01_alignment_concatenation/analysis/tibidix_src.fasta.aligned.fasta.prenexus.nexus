@@ -1,0 +1,30 @@
+#NEXUS
+BEGIN DATA;
+	DIMENSIONS NTAX=22 NCHAR=84;
+	FORMAT DATATYPE=STANDARD GAP=- MISSING=?;
+	MATRIX
+
+_A_Gu_Ms_0807	g-kkkkkkkkkhkkjhhghfggg-jkhkjkghhlkklkkkk-hkkkjhhhghghfgghkghg-kghhhgfef-ggg-hgfgfee
+_CH_ROM_Ms_liturg_FiD_5	g----kkkkkkh-kjhhghfggg---hkjkghhlkjl-kkk-hkkkjhhhghhjghghkghg-jg-hhg-ef-ggg-hgfgfee
+_D_B_Ms_mus_40078	gkkkkkkkkkkhkkjhhghfggg-kkhkjkghhlkkl-kkk-ghkkjhhhghghghghkghg-kghhhg-fghggg-hgfgfee
+_D_HEu_Cod_Sal_X_007	g----kkkkkkhkkjhhghfggg---hkjkghhlkjl-kkkhhkkkjhhhghhjghghkghg-jghhhg-ef-ggg-hgfgfee
+_D_KNd_Ms_1001b	g------kkkkhkkjhhgjghhh-kkhkjkghhlkkl---k-hkkkjhhhghgjghghjghg-jghhhg-ef-ggg-hgfgfee
+_D_LEu_Ms_Thomas_391	g----kkkkkkh-kjhhghfggg-kkhkkkghhlkkl---k-khkkjhhhghghghghkghg-kghhg--ef-ggg-hgfgfee
+_F_CA_Ms_0061_62	gkkkkkkkkkkhkkjhhghfggg-kkhkjkghhlkjl---k-khkkjhhhghghghg-jghg-jghhhg-ef-ggg-hgfgfee
+_F_G_Ms_0084_Ms_395_Res	h-kkkkkkkkkhkkjhhhkghhh-kkhkkkghhlkjl-kkk-hkkkjhhhghghghghjghg-jghhhg-ef-ggg-hgfgfee
+_F_NS_Ms_0004	hkkkkkkkkkkhkkjhhhjghhh-kkhkkkghhlkjl-kkk-hjkkjhhhghghghghjghg-jg-hhg-ef-ggg-hgfgfee
+_F_PR_Ms_0012	hkkkkkkkkkkhkkjhhhkghhh-kkhkjkghhlkjl-kkk-hkkkjhhhghhjgh----hg-jghhhg-ef-ggg-hgfgfee
+_F_Pa_Ms_0197	h-----kkkkkhkkjhhhkghhh-kkhkjkghhlkjl-kkk-hkkkjhhhghgjghghkghg-jghhhg-ef-ggg-hgfgfee
+_F_Pn_Ms_Lat_00833	gkkkkkkkkkkhkkjhhhkghhh-kkhkjkghhlkjl-kkk-khkkjhhhghgjghghjghg-jghhhg-ef-ggg-hgfgfee
+_F_Pn_Ms_Lat_17307	g----kkkkkkhkkjhhhkghhh-kkgkjkghhlkjl--kk-hkkkjhhhghghghkghghg-kghhhg-ef-ggg-hgfgfee
+_F_Pn_NAL_01235	h-kkkkkkkkkhkkjhhhkghhh-kkhkkkghhlkkl--kk-hkkkjhhhghghghghjghg-jghhhg-ef-gggfhgfgfee
+_F_Pn_NAL_01414	h----kkkkkkhkkjhhghfggg---hkjkghhlkjl-kkk-hkkjhgggfghjghghkghg-jghhhg-ef-ggg-hgfgfee
+_F_SEm_Ms_018	hkkkkkkkkkkhkkjhhhkghhh-kkhkkkghhlkjl-kkk-hkkkjhhhghgjghghjghg-jghhhgfef-ggg-hgfgfee
+_I_BGc_MA_150_Psi_III_8	g---kkkkkkkhkkjhhghfgggkkkhkjkghhlkkl---k--hkkjhhhghgjghghjghg-jghhhg-ef-ggg-hgfgfee
+_I_BGc_MA_239_Gamma_III_18	g-kkkkkkkkkhkkjhhghfggg-kkhkkkghhlkjl---k-hjkkjhhhghghghghjghg-jghhhg-ef-ggg-hgfgfee
+_NL_Uu_Hs_0415	g-----kkkkkhkkjhhghefgg-kkhkjkghhlkkl---k-hkkkjhhhghghfgghkghg-kghhgg-ef-ggg-hgfgfee
+_PL_WRu_I_F_416	g----kkkkkkhkkjhhghfggg---hkhkghhlkjl-kkk-hkkkjhhhghhjghghkghg-jghhhg-ef-ggg-hgfgfee
+_PL_Wn_rps_12722_V	g--kkkkkkkkhkkjhhghfggg-kkhkjkghhlkkl-kkk-gkkkjhhhghghghghkghgkkghhhg-efgggg-hgfgfee
+_V_CVbav_Ross_0076	g----kkkkkkh-kjhhghfggg-kkhkkkghhlkkl---k-khkkjhhhghghghghkghg-kghhg---f-ggg-hgfgfee
+;
+end;
