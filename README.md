@@ -9,12 +9,9 @@ In general, each sequential step in this process should be run as ordered (e.g.,
 The `000_dataset_cleaning/source_data` folder contains the source Introits dataset used in experiments.
 They are present as CantusCorpus-style CSV files.
 
-So far, no additional cleaning has been performed.
-
-
 ## Preprocessing
 
-In order to obtain inputs for the bioinformatics pipeline, we need to further preprocess
+In order to obtain inputs for the computational procedure, we need to further preprocess
 the melodies. For phylogeny buidling, melodies should contain only notes and neume/syllable/word
 separators using the standard volpiano dashes. All barlines and other non-note characters
 should be removed. (The preprocessing steps in phylogeny building then takes care of the separators:
@@ -26,7 +23,6 @@ In order to get valid inputs for alignment, we then must create FASTA files
 the chants. This step is implemented by the `000_dataset_cleaning/code/build_src_fasta.py` script.
 It then should be run with the CSV input file `000_dataset_cleaning/source_data/2024-05-27_annotated-melodies_COMPLETED-2024-12-05_autocleaned_transposed_longest-retained_small-filtered.csv`.
 Then, the names of all sigla must be normalized for analysis via the `000_dataset_cleaning/01_rename_sources.sh` script to avoid issues with analytical tools.
-
 
 The list of sigla that are retained (because these sources contain enough
 of all the Cantus IDs that we are analysing):
@@ -77,8 +73,6 @@ On the other hand, we opted to retain **V-CVbav Ross.0076**, even though it only
 introits. It does represent an interesting geographical point -- Adriatic Italy, on the way
 to Dalmatia.
 
-
-
 ### Transposition
 
 Some melodies were recorded in some manuscripts in versions transposed by a fifth up or down, compared
@@ -88,8 +82,6 @@ we transpose these melodies to be directly comparable to the majority position o
 to introduce spurious written differences between melodies that would not be reflected in sung practice.
 
 The list of transposed chants is documented in `000_dataset_cleaning/source_data/manual/transpositions_needed.txt`.
-
-**Curious cases:**
 
 Exaudi Domine (g00785) from V-CVbav : Vat.lat.05319 ends with a semitone `c-b`, which when transposed
 a fifth to the gamut position of the rest of the Exaudi melodies translates to a unique `f-e` rather
@@ -114,7 +106,6 @@ would be treated the same as F in the alignment (precisely because of such uncer
 is that the choice of position on the gamut in 05319 is certainly not arbitrary. In any case, this is
 an interesting melody for the examination of modality in Old Roman sources.
 
-
 ### Retaining longest versions.
 
 Some sources have multiple versions of the same melody transcribed. While it would be a fascinating experiment
@@ -131,13 +122,9 @@ This affects the following introits and sources:
 - `g00789` -- F-Pn : Ms Lat 00833
 - `g01178` -- D-KNd : Ms 1001b, F-Pa : Ms 0197, F-Pn : Ms Lat 00833, F-Pn : Ms Lat 00904, F-SEm : Ms 018 
 
+##  Bayesian tree inference
 
-
-## Running the phylogeny/DTE/ASR pipeline
-
-### Bayesian tree inference
-
-Multiple sequence alignment was carried out using the code in the folders `01_alignment_concatenation/code` and `02_tree_inference/code`. We use the fasta-formated sequences from the previous step in order to align using `mafft` with a custom score matrix (`00_textmatrix_complete`) which is done by script `01_alignment_concatenation/code/00_alignment.sh` and `01_alignment_concatenation/code/01_concatenation.sh`. Some reformatting is necessary before the files can be used for Bayesian inference, and these are carried out by `phyx` also in the same Python notebook.
+Multiple sequence alignment was carried out using the code in the folders `01_alignment_concatenation/code` and `02_tree_inference/code`. We use the fasta-formated sequences from the previous step in order to align using `mafft` with a custom score matrix (`00_textmatrix_complete`) which is done by script `01_alignment_concatenation/code/00_alignment.sh` and `01_alignment_concatenation/code/01_concatenation.sh`.
 
 Tree inference is carried out by `mrbayes_volpiano` as triggered by the script `02_tree_inference/code/02_run_tree_inference.sh`, which uses the `mrbayes_volpiano` script `01_tree_inference.mb`. This step uses the concatenated alignment `00_tree_inference/data/concatenated.nexus` and returns the analysis output to `02_tree_inference/analysis`.
 
@@ -166,7 +153,6 @@ This analysis is carried out by `mrbayes_volpiano` using the script `04_divtime/
 The age information used as calibration densities is found in Table S1 below:
 
 Table S1. Calibration densities (CD) used in DTE. Time scale is in both years before the present (YBP, as used by `mrbayes_volpiano`) as well as in anno Domini (AD). Single time values represent fixed values whereas intervals represent Uniform(min,max) calibration densities.
-
 
 | Node                         | CD (YBP)   | CD (AD)    |
 |------------------------------|------------|------------|
@@ -197,4 +183,4 @@ Table S1. Calibration densities (CD) used in DTE. Time scale is in both years be
 
 The result for this analysis is stored in `04_divtime/analysis/tree18` (we evaluated this analysis for each tree from the previous step, see `04_divtime/analysis/tree*`).
 
-The summarised tree file `04_divtime/analysis/tree18/posterior/alignment_and_trees.nexus.con.tre` is then read by `figtree` in order to produce the Figure 1. This is carried out incorporating an offset of -408, reversing the time axis, and then plotting the HPD interval for the node ages and colouring branches with median IgrBranch rates. The tree is then plotted in units of years before present.
+The summarised tree file `04_divtime/analysis/tree18/posterior/alignment_and_trees.nexus.con.tre` is then read by `figtree` in order to plot the timetree. This is carried out incorporating an offset of -408, reversing the time axis, and then plotting the HPD interval for the node ages and colouring branches with median IgrBranch rates. The tree is then plotted in units of years before present.

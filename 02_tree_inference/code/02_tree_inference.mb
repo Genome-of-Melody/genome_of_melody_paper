@@ -46,9 +46,6 @@ prset applyto=(all) ratepr=variable;
 [a diffuse compound gamma prior on branch lengths with mean tree length = 0.362]
 prset brlenspr = unconstrained: gammadir(1, 2.76, 1, 1);
 
-[Note: This hyperprior is segfaulting mrbayes: a symdirichlet hyperprior on the stationary frequencies]
-[prset applyto=(all) symdirihyperpr=fixed(1.0);]
-
 [show the model just specified for each partition]
 showmodel;
 
