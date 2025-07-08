@@ -2,15 +2,11 @@
 mkdir ../analysis
 
 cd ../analysis
-#ln -s ../../02_tree_inference/data/concatenated.nexus ../data/concatenated.nexus
 
 # uncomment if divtime should be estimated on more than one tree
 #for i in {tree,numbers,separated,by,commas}; do
-#for i in '5'; do 4-10, 19-20, 29-30, 32-42
-for i in {0..42}; do
-    if [[ $i -eq 5 || $i -eq 18 || $i -eq 24 ]]; then
-        continue
-    fi
+#for i in {0..42}; do
+for i in {5,18,24}; do
     mkdir tree$i
     cd tree$i
     # sample from prior
