@@ -1,6 +1,5 @@
 library(tbea)
 library(ape)
-library(phytools)
 
 tsample1 <- read.nexus("../data/concatenated.nexus.run1.t")
 tsample2 <- read.nexus("../data/concatenated.nexus.run2.t")
