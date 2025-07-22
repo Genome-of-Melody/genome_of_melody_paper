@@ -1,7 +1,5 @@
 library(tbea)
 
-#to do: prepare better figure labels and main text
-
 #trees 5, 18, and 24
 
 # tree 5
