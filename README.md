@@ -184,3 +184,11 @@ Table S1. Calibration densities (CD) used in DTE. Time scale is in both years be
 The result for this analysis is stored in `04_divtime/analysis/tree18` (we evaluated this analysis for each tree from the previous step, see `04_divtime/analysis/tree*`).
 
 The summarised tree file `04_divtime/analysis/tree18/posterior/alignment_and_trees.nexus.con.tre` is then read by `figtree` in order to plot the timetree. This is carried out incorporating an offset of -408, reversing the time axis, and then plotting the HPD interval for the node ages and colouring branches with median IgrBranch rates. The tree is then plotted in units of years before present.
+
+Three summaries were then prepared. One for topological uncertainty, one for prior-posterior comparison of node ages, and a clock model selection analysis.
+
+The directory `05_toptrees` contains code and plots of the top 10 posterior probability trees. The R package [`tbea`](https://cran.r-project.org/package=tbea) is used for processing the posterior tree samples and generating topology statistics.
+
+The directory `06_nodeages_prior_posterior` contain comparisons between prior node age distributions and their corresponding posterior distributions. These comparisons are made for each of the tree target trees (5, 18, and 24) using crossplots. Processing and plotting was carried out inspired by the crossplots provided by the R package [`tbea`](https://cran.r-project.org/package=tbea).
+
+The directory `07_clock_modsel` contains the results of carrying out model selection by means of Bayes factors. Calculation of the marginal likelihood for each combination of target tree (trees 5, 18, and 24) and clock model (independent and autocorrelated) were carried out using stepping stones with 5 stones. The marginal likelihood was then used to calculate Bayes factors and then model posterior probabilities within each target tree and across clock models. In all target trees the independent clock was strongly supported over the autocorrelated clock.
