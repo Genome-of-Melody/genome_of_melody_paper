@@ -1,0 +1,7 @@
+"tree"	"clock"	"loglik"	"bayes.factors"	"post.prob"
+"tree 5"	"independent"	-5011.4	1	0.76
+"tree 5"	"autocorrelated"	-5012.53	0.32	0.24
+"tree 18"	"independent"	-4992.68	1	1
+"tree 18"	"autocorrelated"	-5033.16	0	0
+"tree 24"	"independent"	-4994.38	1	1
+"tree 24"	"autocorrelated"	-5039.35	0	0
