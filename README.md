@@ -201,26 +201,9 @@ The directory `06_nodeages_prior_posterior` contain comparisons between prior no
 The directory `07_clock_modsel` contains the results of carrying out model selection by means of Bayes factors. Calculation of the marginal likelihood for each combination of target tree (trees 5, 18, and 24) and clock model (independent and autocorrelated) were carried out using stepping stones with 50 stones. The marginal likelihood was then used to calculate Bayes factors and then model posterior probabilities within each target tree and across clock models. In all target trees the independent clock was strongly supported over the autocorrelated clock.
 
 
-## Sampling most likely tree topologies
-
-Finds the top 10 most likely tree topologies from the posterior distribution of trees 
-and plots them with their posterior probabilities, in the script `05_toptrees/01_treedistribution.R`.
-The result is plotted in `05_toptrees/analysis/top10trees.pdf`, with median branch lengths.
-
-## Prior-posterior plot for node ages
-
-Plot how the node ages changed between the prior and posterior distribution. This illustrates the effect
-of observations on node ages in the DTE analysis.
-
-## Clock model selection: autocorrelated vs. independent rates
-
-Model selection in DTE for independent vs. autocorrelated clock model. Marginal likelihoods estimated
-with stepping stones, similar to model selection over alternative rooting points.
-Each model has their own subdirectory, `autocorrelated/` and `independent/`, with `data/`, `code/` and `analysis/`.
-
-
 ## Phylogenetic signal
 
+The directory `08_phylogenetic signal` contains code and results for the analyses of phylogenetic signal in the manuscript metadata traits.
 (Note that this subdirectory contains both Introits and Christmas analyses.)
 
 Computing phylogenetic signal for the metadata traits. 
@@ -247,9 +230,9 @@ All are installed from the jupyter notebook.
 
 ## Further experiments
 
-More measurements, esp. treelikeness checks (reported mainly in the supplementary materials), 
-were carried out in separate applications. We provide the input data and settings here, 
-and results other than figures (which are given in the Supplementary materials).
+The directory `09_further_experiments` contains the remaining measurements, esp. treelikeness checks (reported mainly in the supplementary materials), 
+that were carried out in separate applications. We provide the input data and settings here, 
+and results other than figures (which are, again, given in the Supplementary materials).
 
 For treelikeness, incompatibility scores using were computed in the SplitsTree 6 software 
 with the `base_freqdist` distance function (the only applicable one) and NeighborNets using the concatenated FASTA 
