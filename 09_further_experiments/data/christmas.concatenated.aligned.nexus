@@ -1,0 +1,187 @@
+#NEXUS
+[TITLE: NoName]
+
+begin data;
+dimensions ntax=14 nchar=544;
+format interleave datatype=protein   gap=- symbols="edjlckhgfi";
+
+matrix
+_A_VOR_Cod_259_I            cdefed-dgf ghgfed-efe decegfghge defeedeghk hhgfgghgfe 
+_CH_E_611                   cdefe--d-- gfgfedeefe decfg----- edfeedeghk hhgfgg-hgf 
+_CZ_HKm_II_A_4              cdefed-dgf ghgfedeefe decegfghge defeedeghk hhgfgghgfe 
+_CZ_PLm_504_C_004           cdefedcdgf ghgfedeefe de-------- ---------- ---------- 
+_CZ_Pn_XV_A_10              cdefe--dgf ghgfedeefe decegfghge def-edeghk hhgfgg--ff 
+_CZ_Pu_I_D_20               cdefe--d-- gfgfedeefe decegf--ge defeedeghk hhgfgghhgf 
+_D_KA_Aug_LX                cdefeddd-- gfgfedeefe decegf--gf eefeedeghk hhgfgg-hgf 
+_F_Pn_lat_12044             cdefe--d-- gegfedeefe decegdg-fe dffeeceghk hhgfgh---- 
+_NL_Uu_406                  dfffe--d-- gfgfedfffe dfdegfg--- edfeedeghk hhgfgghggf 
+_A_Wn_1799                  ---------- ---------- ---------- ---------- ---------- 
+_CDN_Hsmu_M2149_L4          ---------- ---------- ---------- ---------- ---------- 
+_CZ_Pu_XVII_E_1             ---------- ---------- ---------- ---------- ---------- 
+_D_KNd_1161                 ---------- ---------- ---------- ---------- ---------- 
+_F_Pn_lat_15181             ---------- ---------- ---------- ---------- ---------- 
+
+
+_A_VOR_Cod_259_I            fggf--edef gfedfg--hg fgghgedefe edeghkhhhg hkgffefgfe 
+_CH_E_611                   efgf----ef gff-fg--hg fgghgfedff edeghkhhh- hkgfeefg-- 
+_CZ_HKm_II_A_4              fggfefedef gfe-fg--hg fgghgedefe edeghkhhh- hkgffefgfe 
+_CZ_PLm_504_C_004           ---------- ---------- ---------- ---------- ---------- 
+_CZ_Pn_XV_A_10              efggefedef gfe-fg--hg fgghgedefe edeghkhhh- hkgffefgf- 
+_CZ_Pu_I_D_20               efgf--e-ef gefdfg--hg fgghgfedef edeghkhhhg hkgffefg-- 
+_D_KA_Aug_LX                efgf----ef gfeefg--hj fgghgfedef edeghkhhhh hkgfefgfee 
+_F_Pn_lat_12044             --gf--eddf gfedfghhhg fgghgfhgfe eceghkhhhg hkgfeeefg- 
+_NL_Uu_406                  efgf----ef gfedfg-ghg fgghg----f edeghkhhhg hkgfffefgg 
+_A_Wn_1799                  ---------- ---------- ---------- ---------- ---------- 
+_CDN_Hsmu_M2149_L4          ---------- ---------- ---------- ---------- ---------- 
+_CZ_Pu_XVII_E_1             ---------- ---------- ---------- ---------- ---------- 
+_D_KNd_1161                 ---------- ---------- ---------- ---------- ---------- 
+_F_Pn_lat_15181             ---------- ---------- ---------- ---------- ---------- 
+
+
+_A_VOR_Cod_259_I            defeddefgf g-edefee-d g-hgfe-dfe --ghghkhgf ghg-dfe--g 
+_CH_E_611                   -efeddefgf gfedefee-d hhggfe-dee -fghghjhgf ghgfdfe-fg 
+_CZ_HKm_II_A_4              -fedcdefge g-ec-fee-c g-gfed-dfe --ghghkhgf ghg-dfe--g 
+_CZ_PLm_504_C_004           ---------- --------dd h-hgfe-dfe -fghghkhgf ghg-dfe-fg 
+_CZ_Pn_XV_A_10              -eefddefge g-ec--de-d h-hgfe-dfe -fghghkhgf ghggdfe-fg 
+_CZ_Pu_I_D_20               -efeddefgf gfedefee-d h-hgfe-dfe -fghghkhgf ghg-dfe-ge 
+_D_KA_Aug_LX                -efeddefgf gfedefee-d h-hgfe-dfe --ghghkhgf ghg-dfe--g 
+_F_Pn_lat_12044             -ffeddefgd gfedffee-d hhggfe-dfe -fghghkhgf ghg-ffe-fg 
+_NL_Uu_406                  -ffeddefgf gfedffee-d hhggfefdfe ffghghkhgf ghgfdfeffg 
+_A_Wn_1799                  ---------- ---------d hghgfe-dfe -fghghihgf ghg-ffe-fg 
+_CDN_Hsmu_M2149_L4          ---------- ---------d hghgfe-dfe -fghghihgf ghg-ffe-fg 
+_CZ_Pu_XVII_E_1             ---------- ---------d h-hgfe-dfe --ghghkhgf ghg-dfe--g 
+_D_KNd_1161                 ---------- ---------d hghgfe-dfe -fghghihgf ghg-ffe-fg 
+_F_Pn_lat_15181             ---------- ---------d h-hgfe-dfe -fghghkhgf ghgfdfe-fg 
+
+
+_A_VOR_Cod_259_I            h-d----fef gfedcfghf- gede-c-ef- -gg-fedefg gg--hgfgh- 
+_CH_E_611                   hgd----fef gfeddfhhf- gedf-c-de- -gg-f-defg gg--hgfgh- 
+_CZ_HKm_II_A_4              h-d----fef gfedcfghf- gede-c-de- ggg-fedefg gg--hgfgh- 
+_CZ_PLm_504_C_004           h-d----fef gfed-fghf- gede-c-de- -gg-fedefg gg--hgfgh- 
+_CZ_Pn_XV_A_10              h-d----fef gfed-fghf- gede-c-de- -gg-gfdefg gg--hgfgh- 
+_CZ_Pu_I_D_20               h-d----fef gfedcfghfd gede-c-de- -gggfedefg gg--hgfgh- 
+_D_KA_Aug_LX                h-d----fef gfed-fghf- gede-c-dee -gg-f-defg gg--hgfgh- 
+_F_Pn_lat_12044             h-d-----de gfeddfhhf- gede-c-de- -gg-ffdefg gg-hhgffh- 
+_NL_Uu_406                  h-dddfeffg ffeddfhhf- gedf-cdde- -gg-f-defg gg-hhgfghg 
+_A_Wn_1799                  h-d-----de gfedfghhf- hede-c-de- -gg-efdefg gg-hhgfgh- 
+_CDN_Hsmu_M2149_L4          h-d-----de gfedfghhf- gededc-de- -ggfefdefg gghhhgfgh- 
+_CZ_Pu_XVII_E_1             h-d----fef gfedcfghf- gede-c---- -gg-fedefg gg--hgfgh- 
+_D_KNd_1161                 h-d-----de gfed-fghf- gede-c-de- -gg-efdefg gghhhgfgh- 
+_F_Pn_lat_15181             h-d-----df gfedddfhf- gede-c-de- -gg-f-defg gg-hhgffh- 
+
+
+_A_VOR_Cod_259_I            --kjhg-hh- hgfggg--gk jkll--khkg ghgfffghh- -jkjh-ghg- 
+_CH_E_611                   --kjhg-hh- hgfggg--gk klkl-kkhkj ghgfffghh- -jkjh-ghgf 
+_CZ_HKm_II_A_4              --kjhg-hh- hgfggg--gk jkll--khk- ghgfffghh- -jkjh-ghg- 
+_CZ_PLm_504_C_004           --kjhg-hh- hgfgg----- ---------- ---------- ---------- 
+_CZ_Pn_XV_A_10              --kjhghhh- hgfggg--gk jkll--khk- ghgfffghh- --kjh-ghg- 
+_CZ_Pu_I_D_20               --kjhgghh- hgfggg--gk jkl---khkg ghgfffghh- -jkjh-ghg- 
+_D_KA_Aug_LX                --kjhg-hh- hgfggg--gk jkllkkjhkj ghgfffghh- --kjh-ghg- 
+_F_Pn_lat_12044             --kkjh-hh- hgfggf--hk kllk--khkj ghgfffghh- hkkjh-ghg- 
+_NL_Uu_406                  gkkjhg-hhg hgfggghhhk kllk--khk- ghgfffghhg gkkjh-ghg- 
+_A_Wn_1799                  kkkjhg-hh- hgfggf--hk kllk-kjhkk jghgffghk- -kkjh-ghg- 
+_CDN_Hsmu_M2149_L4          kkkjhghhh- hgfggf--hk kllk-kjhkk jghgffghk- -kkjh-ghg- 
+_CZ_Pu_XVII_E_1             --kjhg-hh- hgfggg--gk jhjj--hhk- ghgfffghh- -jkjhgghg- 
+_D_KNd_1161                 kkkjhg-hh- hgfggf--hk kllk-kjhkk jghgffghk- -kkjh-ghg- 
+_F_Pn_lat_15181             -kkjhg-hh- hgfggf--hk klk---jhkk ghgfffghh- ghkkj-hhg- 
+
+
+_A_VOR_Cod_259_I            fefgg-gggg f-edf---fg hg--hgfghh hhghjkjhge fghjk---jh 
+_CH_E_611                   fefgf-gggg f-def---gh gg--hgfg-h hhghjkjhgg ghhkh---gh 
+_CZ_HKm_II_A_4              fefgfggggg f-edf---fg hg--hgfg-h hhghjkjhge fghjk---jh 
+_CZ_PLm_504_C_004           ---------- ---------- ---------- ---------- ---------- 
+_CZ_Pn_XV_A_10              fefgf-gggg f-edf---fg hg--hgfg-h hhgg-kjhge fghk-----j 
+_CZ_Pu_I_D_20               fefgf-gggg f-edfefggh gg--hgfg-h hhghjkjhgg hghhkjhgfh 
+_D_KA_Aug_LX                fefgf-gggg f-dff---gh gg--hgfg-h hhghkkjhgf ghhjk----h 
+_F_Pn_lat_12044             fefgf-gggg ffddfefggh gghihgfg-g hhgh-kihg- -hhih---gh 
+_NL_Uu_406                  fefgf-gggg f-ddfefggh gg--hgfghh hhgg-kjhgg ghhkh---gh 
+_A_Wn_1799                  fefg--gggg f-def---gh gh--hgfghh hhghkkjhh- -ghjh---gh 
+_CDN_Hsmu_M2149_L4          fefg--gggg f-def--ggh gh--hgfghh hhghkkjhh- -ghjh---gh 
+_CZ_Pu_XVII_E_1             fefgf-gggf f-edf---fg hg--hgfg-h hhghjkjhge fghjk---jh 
+_D_KNd_1161                 fefg--gggg f-def---gh gh--hgfghh hhghkkjhh- -ghjh---gh 
+_F_Pn_lat_15181             fefgf-gggg f-dfefgggh hi--hgfghh hhgh-kihgg ghhih---gh 
+
+
+_A_VOR_Cod_259_I            g-efgggggg fedffghhgg ghkgghgffk hgh-ljkjhg ggghgfd-fg 
+_CH_E_611                   g-efgggggg fedffghhgg ghkgghgffk jhh-ljk--h ggghfedefg 
+_CZ_HKm_II_A_4              g-efgggggg fedffghhgg ghk-ghgffk jhh-ljkjhg ggghfed-fg 
+_CZ_PLm_504_C_004           -------ggg fedffghhg- ---------- ---------- ---------- 
+_CZ_Pn_XV_A_10              h-efgggggg fedffghhgg ghkgghgffk jhh-kjk-hg ggghfed-fg 
+_CZ_Pu_I_D_20               g-efgggggg fedffghhgg ghkg------ ---------- ---------- 
+_D_KA_Aug_LX                g-efgggggg f-defghhgg ghkgghgffk jhh-kjk-hg ggghfedefg 
+_F_Pn_lat_12044             gfefggggg- --dehghhgg ghj-ghgfkk jhh-lkjkhg ggghfed--- 
+_NL_Uu_406                  g-efgggggg f-defghhgg ghkgghgffk kjhhlkkkhg ggghfedefg 
+_A_Wn_1799                  gfefgggggg f-defghhgg ghjgghgffk kjhhlk--jh ggghfedefg 
+_CDN_Hsmu_M2149_L4          gfefgggggg f-defghhgg ghjgghgffk kjhhl---jh ggghfedefg 
+_CZ_Pu_XVII_E_1             g-efgggggg fedffghhgg ghk-ghgffk jhh-ljkjhg ggghfed-fg 
+_D_KNd_1161                 gfefgggggg f-defghhgg ghjhghgffk kjhhlk--jh ggghfedefg 
+_F_Pn_lat_15181             gfefgggggg f-defghhgg gghjghgfkk jhh-lkkjhg ggghfed-fg 
+
+
+_A_VOR_Cod_259_I            hh-ggfedef gggfedeeee fedfe-ghd- fece-gfede cefgfghgh- 
+_CH_E_611                   hh-ggfedef gggfedeeee fedee-ghd- fedegffede ce-gfghgh- 
+_CZ_HKm_II_A_4              hhgggfedef gggfedeeee fedfe-ghd- feceggfede cefgfghgh- 
+_CZ_PLm_504_C_004           ---------- ---fedeeee fedf------ ---------- ---------- 
+_CZ_Pn_XV_A_10              hh-ggfedef gggfedeeff fedfefghd- fece-gfede cefgfghgh- 
+_CZ_Pu_I_D_20               ---------- ---fedffff fedfefghde fedefgfede cefgfghghe 
+_D_KA_Aug_LX                hh-ggfd-ef gggfedeeee fedfe-ghde fece-gfede ce-gfghgh- 
+_F_Pn_lat_12044             -------fef gggfdfffff fedee-ghdf fecegefede ce-gffhhg- 
+_NL_Uu_406                  hh-ggfd--- ---fdeeeff fedeegghd- dfdegffdde ceggfghhg- 
+_A_Wn_1799                  hh-ggfdfef gggfdfffff fedee-ghdf fecegefede ce-ggfghg- 
+_CDN_Hsmu_M2149_L4          hh-ggfdfef gggfdfffff fedee-ghdf fecegefede eg-gfghhg- 
+_CZ_Pu_XVII_E_1             hh-ggfedef gggfedeeee fedfe-ghd- feceggfede cefgfghgh- 
+_D_KNd_1161                 hh-ggfdfef gggfdfffff fedee-ghdf fecefdedcd ceggfghhg- 
+_F_Pn_lat_15181             hh-ggfdfef gggfdfffff fedee-ghdf fecegefed- ce-ggfhhg- 
+
+
+_A_VOR_Cod_259_I            fe-------- ---------- ---------- ---------- ---------- 
+_CH_E_611                   fedeg--eeh hkhh-hghhg efedfghg-- -hhhhge--f dcdde-fgfe 
+_CZ_HKm_II_A_4              fedeg-fedh hkhh---hhg efedfghg-- -hhhgfe-fe dced--fdee 
+_CZ_PLm_504_C_004           ---------- ---------- ---------- ---------- ---------- 
+_CZ_Pn_XV_A_10              fedeg-fedh hkhh---hhg efedfghg-- -hhhhge--f dcdd--fgfe 
+_CZ_Pu_I_D_20               fedefgfedh hkhh---hhg efedfghg-- --hhhge--f dcdde-fgfe 
+_D_KA_Aug_LX                fedeg--eeh hkhhhhghhg efedfghghg hhhhhge--f dcddefggfe 
+_F_Pn_lat_12044             hedeg---fh hihh-hghhg efedfghg-- -hhhhgfgfe dcdd--fgfe 
+_NL_Uu_406                  hedeg---eh hkhh-hghhg efedfgghhg ghhhhge--f dcdd--fgfe 
+_A_Wn_1799                  hedef---dh hihh-hghhg efedfghg-- -hhhhgfgfe dcdd--fgfe 
+_CDN_Hsmu_M2149_L4          hedef---dh hihh-hghhg efedfghg-- -hhhhgfgfe dcdd--fgfe 
+_CZ_Pu_XVII_E_1             fedeg-fedh hkhh---hhg efedfghg-- -hhhgfg-fe d--------- 
+_D_KNd_1161                 hedef---dh hihh-hg-hg efedfghg-- -hhhhgfgfe dcdd--fgfe 
+_F_Pn_lat_15181             hedeg---eh hjhh-hghhg efedfghg-- -hhhfgf--- ecdd--fgfe 
+
+
+_A_VOR_Cod_259_I            ---------- ---------- ---------- ---gg-dfgg -hgfg-h--h 
+_CH_E_611                   deeghhghgf gfedhh-fgg f--d-fefgf gfegg-dfgg -hgfg-h--h 
+_CZ_HKm_II_A_4              d--------- ---------- ---------- ---gg-dfgg -hgfg-hhjh 
+_CZ_PLm_504_C_004           ---------- ---------- ---------- ---gg-dfgg -hgfg-h--h 
+_CZ_Pn_XV_A_10              dffgh----f gfedh--fgg f--d-fe-ge ffegg-dfgg -hgfg-h--h 
+_CZ_Pu_I_D_20               deegh-ghgf gfedhg-fgg fe-d-fegfe ggfgg-dfgg -hgfg-hg-h 
+_D_KA_Aug_LX                deeghh---f gfedhh-fgg ffed-fe-gf ffegg-dfgg -hgfg-hg-h 
+_F_Pn_lat_12044             deeghhghgf gfedhh-fgg f--d-fe-gf ffeggfdfgg hggfg-hg-h 
+_NL_Uu_406                  deeghhghgf edehhh-fgg fefdfeefge ffegg-dfgg hhgfg-hghh 
+_A_Wn_1799                  deeghhghgf ---dhh-fgg ffed-fe-gf ffegg-dfgg hhgfg-hg-h 
+_CDN_Hsmu_M2149_L4          deeghhghgf ---dhh-fgg ffed-fe-gf ffegg-dfgg hhgfg-hg-h 
+_CZ_Pu_XVII_E_1             ---------- ---------- -----fe-ge ffe------- ---------- 
+_D_KNd_1161                 deeghhghgf ---dhhhfgg ff-d-fefgf gfegg-dfgg hhgfghhg-h 
+_F_Pn_lat_15181             deeghhghgf gf-dhh-fgg f--d-fe--f gfeggfdfgg hhgfg-hhjh 
+
+
+_A_VOR_Cod_259_I            fh-hkgh-gf gh-gfgfedf f---dfcdfg gfhhk-hgfg hhgg 
+_CH_E_611                   fh-hkghggf gh-gfgfedf f---dfcdfg gfhhkjhgfg hhgg 
+_CZ_HKm_II_A_4              fh-hkgh-gf gh-gfgfedf f---dfcdfg gfhhk-hgfg hhgg 
+_CZ_PLm_504_C_004           fh-hkgh-g- ---------- ---------- ---------- ---- 
+_CZ_Pn_XV_A_10              fh-hkgh-gf gh-gfgfedf f---dfcdfg gfhhk-hgfg hhgg 
+_CZ_Pu_I_D_20               fh--kgh-gf gh-gfgfedf f---fgcdfg gf-hk-hgf- ---- 
+_D_KA_Aug_LX                fh-hkgh-gf gh-gfgfedf f---dfcdfg gf-hk-hgfg hhgg 
+_F_Pn_lat_12044             fh-kjghggf gh-gfgfedd ffeddfcdfg gfhhk-hgfg hhgg 
+_NL_Uu_406                  fhhkjghggf ghggfgfedf f-dddfcdfg gfhhkjhgfg hhgg 
+_A_Wn_1799                  fh-kjgh-gf gh-gfgfedf f---dfcdfg gfhhk-hgfg hhgg 
+_CDN_Hsmu_M2149_L4          fh-kjgh-gf gh-gfgfedf f---dfcdfg gfhhk-jhfg hhgg 
+_CZ_Pu_XVII_E_1             ---------- ---------- ---------- ---------- ---- 
+_D_KNd_1161                 fh-kkgh-gf gh-gfgfedf f---dfcdfg gfhhk-hgfg hhgf 
+_F_Pn_lat_15181             fh-kjghggf gh-gfgfedf f---dfcdfg gfhhk-hgfg hhgg 
+
+
+;
+
+endblock;

@@ -1,0 +1,15 @@
+tip_ID,century,provCoarse,provenanceFine,cursusDetailed,cursusCoarse,proveEWCist,provEW
+A_VOR_Cod_259_I,14th,Bohemia,Prague,Canons,secular,East,East
+A_Wn_1799,13th,Austria,SouthGerman,Cistercian,Monastic,Cist,West
+CDN_Hsmu_M2149_L4,16th,LowCountries,NorthGerman,Cistercian,Monastic,Cist,West
+CH_E_611,14th,Germany,SouthGerman,Benedictine,Monastic,East,East
+CZ_HKm_II_A_4,15th,Bohemia,NotPrague,secular,secular,East,East
+CZ_PLm_504_C_004,17th,Bohemia,NotPrague,secular,secular,East,East
+CZ_Pn_XV_A_10,14th,Bohemia,Prague,secular,secular,East,East
+CZ_Pu_I_D_20,14th,Germany,SouthGerman,Augustinian,Monastic,East,East
+CZ_Pu_XVII_E_1,16th,Bohemia,NotPrague,secular,secular,East,East
+D_KA_Aug_LX,12th,Germany,SouthGerman,Benedictine,Monastic,East,East
+D_KNd_1161,13th,Germany,NorthGerman,Cistercian,Monastic,Cist,West
+F_Pn_lat_12044,12th,France,CentralFrench,Benedictine,Monastic,West,West
+F_Pn_lat_15181,14th,France,CentralFrench,secular,secular,West,West
+NL_Uu_406,12th,LowCountries,NorthGerman,secular,secular,East,West
