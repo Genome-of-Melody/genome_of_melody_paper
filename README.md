@@ -1,7 +1,7 @@
 # Genome of Melody: Applying bioinformatics to study the evolution of Gregorian chant
 
 Dataset including 560 introit melodies.
-(The Christmas results are in a separate repository with a similar structure: 
+(The Christmas trees are in a separate repository with a similar structure: 
 `https://github.com/Genome-of-Melody/divtime_christmas`.)
 
 In general, each sequential step in this process should be run as ordered (e.g., `000_*`, then `01_*`, then `02_*`, up to `04_*`). 
@@ -191,6 +191,77 @@ Table S1. Calibration densities (CD) used in DTE. Time scale is in both years be
 The result for this analysis is stored in `04_divtime/analysis/tree18` (we evaluated this analysis for each tree from the previous step, see `04_divtime/analysis/tree*`).
 
 The summarised tree file `04_divtime/analysis/tree18/posterior/alignment_and_trees.nexus.con.tre` is then read by `figtree` in order to plot the timetree. This is carried out incorporating an offset of -408, reversing the time axis, and then plotting the HPD interval for the node ages and colouring branches with median IgrBranch rates. The tree is then plotted in units of years before present.
+
+Three summaries were then prepared. One for topological uncertainty, one for prior-posterior comparison of node ages, and a clock model selection analysis.
+
+The directory `05_toptrees` contains code and plots of the top 10 posterior probability trees. The R package [`tbea`](https://cran.r-project.org/package=tbea) is used for processing the posterior tree samples and generating topology statistics.
+
+The directory `06_nodeages_prior_posterior` contain comparisons between prior node age distributions and their corresponding posterior distributions. These comparisons are made for each of the tree target trees (5, 18, and 24) using crossplots. Processing and plotting was carried out inspired by the crossplots provided by the R package [`tbea`](https://cran.r-project.org/package=tbea).
+
+The directory `07_clock_modsel` contains the results of carrying out model selection by means of Bayes factors. Calculation of the marginal likelihood for each combination of target tree (trees 5, 18, and 24) and clock model (independent and autocorrelated) were carried out using stepping stones with 50 stones. The marginal likelihood was then used to calculate Bayes factors and then model posterior probabilities within each target tree and across clock models. In all target trees the independent clock was strongly supported over the autocorrelated clock.
+
+
+## Sampling most likely tree topologies
+
+Finds the top 10 most likely tree topologies from the posterior distribution of trees 
+and plots them with their posterior probabilities, in the script `05_toptrees/01_treedistribution.R`.
+The result is plotted in `05_toptrees/analysis/top10trees.pdf`, with median branch lengths.
+
+## Prior-posterior plot for node ages
+
+Plot how the node ages changed between the prior and posterior distribution. This illustrates the effect
+of observations on node ages in the DTE analysis.
+
+## Clock model selection: autocorrelated vs. independent rates
+
+Model selection in DTE for independent vs. autocorrelated clock model. Marginal likelihoods estimated
+with stepping stones, similar to model selection over alternative rooting points.
+Each model has their own subdirectory, `autocorrelated/` and `independent/`, with `data/`, `code/` and `analysis/`.
+
+
+## Phylogenetic signal
+
+(Note that this subdirectory contains both Introits and Christmas analyses.)
+
+Computing phylogenetic signal for the metadata traits. 
+Phylogenetic distance is derived from the rooted maximum credibility tree for each dataset (but
+before DTE --- after DTE the branch lengths only correspond to time, but for phylogenetic signal analysis
+we need the combined phylogenetic distance before time and rate of change are separated).
+
+The metadata encoding manuscript traits, in the `data/` subdirectory, are: `christmas-dates.csv` for continuous time, 
+`christmas-lat-long.csv` for continuous geography (latitude/longitude), `christmas-metadata.csv`
+for categorical traits, and `christmas-nocist-metadata.csv` for categorical traits with the Cistercian sources excluded.
+The same files are used for the Introits analyses, but with the `christmas-` prefix replaced by `introits-`.
+
+**TODO** The analyses are run in a jupyter notebook in `code/`, assumed to be run from that directory
+for relative paths to data files to work.
+
+
+To run the analyses that rely on the `delta` statistic of Ribiero et al., 
+clone `https://github.com/diogo-s-ribeiro/delta-statistic` into the `code/` subdirectory.
+Additional dependencies here are `pastml`, `skbio` and `geopy`.
+All are installed from the jupyter notebook.
+
+
+
+
+## Further experiments
+
+More measurements, esp. treelikeness checks (reported mainly in the supplementary materials), 
+were carried out in separate applications. We provide the input data and settings here, 
+and results other than figures (which are given in the Supplementary materials).
+
+For treelikeness, incompatibility scores using were computed in the SplitsTree 6 software 
+with the `base_freqdist` distance function (the only applicable one) and NeighborNets using the concatenated FASTA 
+alignments for both datasets (`data/christmas.concatenated.fasta` and `data/introits.concatenated.fasta`).
+Likelihood mapping was carried out in IqTree 3, again using the concatenated FASTA alignments.
+
+Delta-plots and Q-residuals were computed directly with the `phylogemetric` binary (`https://pypi.org/project/phylogemetric/`),
+using Nexus encodings of the concatenated alignmnents (`data/introits.concatenated.aligned.nexus` and `data/christmas.concatenated.aligned.nexus`), 
+the results per manuscript and averaged over manuscripts are reported in ``
+
+Densitree was run with the concatenated traces of sampling chains from topology inference
+(the `concatenated.nexus.run{1..5}.t` files from the `02_tree_inference/analysis/`).
 
 
 ## Sampling most likely tree topologies
