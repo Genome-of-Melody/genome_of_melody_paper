@@ -279,14 +279,15 @@ The metadata encoding manuscript traits, in the `data/` subdirectory, are: `chri
 for categorical traits, and `christmas-nocist-metadata.csv` for categorical traits with the Cistercian sources excluded.
 The same files are used for the Introits analyses, but with the `christmas-` prefix replaced by `introits-`.
 
-**TODO** The analyses are run in a jupyter notebook in `code/`, assumed to be run from that directory
-for relative paths to data files to work.
+The analyses are run in a jupyter notebook in `code/phylogenetic_signal_traits.ipynb`, assumed to be run from that directory
+for relative paths to data files to work. The notebook directly produces the reported results.
+
+Additional dependencies that must be installed before running the notebook are `pastml`, `skbio`, `Biopython`, and `geopy`.
+
+Code for computing the `delta` statistic of Ribiero et al. is cloned in the notebook 
+from `https://github.com/diogo-s-ribeiro/delta-statistic` into the `code/` subdirectory.
 
 
-To run the analyses that rely on the `delta` statistic of Ribiero et al., 
-clone `https://github.com/diogo-s-ribeiro/delta-statistic` into the `code/` subdirectory.
-Additional dependencies here are `pastml`, `skbio` and `geopy`.
-All are installed from the jupyter notebook.
 
 
 
